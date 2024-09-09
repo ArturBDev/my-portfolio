@@ -7,7 +7,6 @@ export default function Projects() {
   return (
     <section className="relative min-h-screen bg-gradient-to-r from-blue-900 via-purple-900 to-pink-900 py-20 px-6 overflow-hidden">
       <ParticlesBackground />
-      {/* Dynamic background effect with particles */}
       <div className="absolute inset-0 opacity-20 bg-cover bg-center animate-move-slow"></div>
 
       <div className="relative z-10">

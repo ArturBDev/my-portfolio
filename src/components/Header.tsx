@@ -1,7 +1,7 @@
 "use client";
 import Link from "next/link";
 import { useState } from "react";
-import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai"; // Menu icons
+import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 
 export const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -13,7 +13,6 @@ export const Header = () => {
   return (
     <header className="bg-gradient-to-r from-gray-900 via-gray-800 to-gray-900 bg-opacity-90 text-white shadow-lg sticky top-0 z-50 backdrop-blur-lg">
       <nav className="container mx-auto p-4 flex justify-between items-center">
-        {/* Logo */}
         <div className="text-3xl font-bold tracking-wider">
           <Link
             href="/"
@@ -22,8 +21,6 @@ export const Header = () => {
             Artur Santos
           </Link>
         </div>
-
-        {/* Desktop Navigation Menu */}
         <ul className="hidden md:flex space-x-8 text-lg font-medium">
           <li>
             <Link
@@ -58,8 +55,6 @@ export const Header = () => {
             </Link>
           </li>
         </ul>
-
-        {/* Mobile Menu Button */}
         <div className="md:hidden flex items-center">
           <button onClick={toggleMenu} className="focus:outline-none">
             {isOpen ? (
@@ -70,8 +65,6 @@ export const Header = () => {
           </button>
         </div>
       </nav>
-
-      {/* Mobile Menu (conditional) */}
       <div
         className={`md:hidden flex flex-col items-center bg-gray-800 bg-opacity-95 backdrop-blur-lg transition-all duration-700 ease-in-out ${
           isOpen
@@ -84,7 +77,7 @@ export const Header = () => {
             <Link
               href="/"
               className="text-lg hover:text-yellow-300 transition duration-300 hover:scale-105"
-              onClick={toggleMenu} // Close the menu after clicking
+              onClick={toggleMenu}
             >
               Home
             </Link>

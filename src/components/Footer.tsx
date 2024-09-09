@@ -1,10 +1,9 @@
-import { AiOutlineGithub, AiOutlineLinkedin } from "react-icons/ai"; // Icons for GitHub and LinkedIn
+import { AiOutlineGithub, AiOutlineLinkedin } from "react-icons/ai";
 
 export const Footer = () => {
   return (
     <footer className="bg-gradient-to-r from-gray-800 to-gray-900 text-white py-6">
       <div className="container mx-auto flex flex-col md:flex-row justify-between items-center">
-        {/* Social Media Links */}
         <div className="flex space-x-6 mb-4 md:mb-0">
           <a
             href="https://github.com/ArturBDev"
@@ -21,8 +20,6 @@ export const Footer = () => {
             <AiOutlineLinkedin className="text-3xl" />
           </a>
         </div>
-
-        {/* Copyright */}
         <p className="text-center text-sm">
           &copy; {new Date().getFullYear()} Artur Santos - All rights reserved.
         </p>

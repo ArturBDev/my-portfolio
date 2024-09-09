@@ -3,7 +3,7 @@ import ParticlesBackground from "@/components/ParticlesBackground";
 export default function Home() {
   return (
     <section className="relative min-h-screen flex flex-col items-center justify-center bg-gradient-to-br from-blue-900 via-purple-900 to-pink-900 text-white overflow-hidden">
-      <ParticlesBackground /> {/* Adiciona as partículas no fundo */}
+      <ParticlesBackground />
       <div className="relative z-10 flex flex-col items-center text-center px-4">
         <h1 className="text-6xl font-extrabold tracking-tight mb-6 animate-fadeIn text-shadow-lg">
           Hello, I am <span className="text-yellow-300">Artur Santos</span>

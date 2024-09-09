@@ -28,11 +28,11 @@ const ParticlesBackground = () => {
           events: {
             onClick: {
               enable: true,
-              mode: "repulse", // Repele as partículas ao clicar
+              mode: "repulse",
             },
             onHover: {
               enable: true,
-              mode: "bubble", // Efeito "bolha" ao passar o mouse sobre as partículas
+              mode: "bubble",
             },
             resize: true,
           },
@@ -45,17 +45,17 @@ const ParticlesBackground = () => {
               duration: 0.4,
             },
             bubble: {
-              distance: 250, // Distância para o efeito "bolha"
-              size: 10, // Tamanho das partículas na bolha
-              duration: 2, // Duração do efeito
-              opacity: 0.8, // Transparência na bolha
-              speed: 3, // Velocidade do efeito
+              distance: 250,
+              size: 10,
+              duration: 2,
+              opacity: 0.8,
+              speed: 3,
             },
           },
         },
         particles: {
           color: {
-            value: ["#ffdd57", "#ff6b6b", "#ffd700", "#f08a5d"], // Cores vibrantes e contrastantes
+            value: ["#ffdd57", "#ff6b6b", "#ffd700", "#f08a5d"],
           },
           links: {
             color: "#ffffff",
@@ -68,10 +68,10 @@ const ParticlesBackground = () => {
             direction: "none",
             enable: true,
             outModes: {
-              default: "bounce", // Partículas "quicam" nas bordas
+              default: "bounce",
             },
-            random: true, // Movimentação aleatória
-            speed: 3, // Velocidade mais suave
+            random: true,
+            speed: 3,
             straight: false,
           },
           number: {
@@ -79,19 +79,19 @@ const ParticlesBackground = () => {
               enable: true,
               area: 800,
             },
-            value: 120, // Mais partículas
+            value: 190,
           },
           opacity: {
             value: 0.6,
           },
           shape: {
-            type: ["circle", "triangle", "polygon"], // Diversas formas para variar o visual
+            type: ["circle", "triangle", "polygon"],
           },
           size: {
-            value: { min: 1, max: 8 }, // Partículas de tamanhos variados
+            value: { min: 1, max: 8 },
             animation: {
               enable: true,
-              speed: 4, // Animação de mudança de tamanho
+              speed: 4,
               minimumValue: 0.3,
               sync: false,
             },
